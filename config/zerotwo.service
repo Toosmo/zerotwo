@@ -1,0 +1,15 @@
+[Unit]
+Description=Zero Two Discord bot.
+Wants=network-online.target
+After=network.target network-online.target
+
+[Service]
+Type=simple
+User=zerotwo
+Group=zerotwo
+WorkingDirectory=/home/zerotwo/ZeroTwo
+ExecStart=/usr/local/bin/pipenv run python3 -u /home/zerotwo/ZeroTwo/bot.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

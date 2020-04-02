@@ -1,0 +1,25 @@
+version: "3.7"
+
+services:
+    zerotwo:
+        image: toosmo/zerotwo:latest
+        restart: always
+        depends_on:
+            - lavalink
+        volumes:
+            - ./config.json:/app/config/config.json
+        entrypoint: /app/wtfc.sh -T 20 nc -z lavalink 2333 && /app/.venv/bin/python zerotwo/bot.py
+
+    lavalink:
+        image: fredboat/lavalink:master
+        restart: always
+        volumes:
+            - ./application.yml:/opt/Lavalink/application.yaml
+        entrypoint: java -Xmx128m -jar Lavalink.jar
+
+    watchtower:
+        image: containrrr/watchtower
+        restart: always
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock
+        command: --cleanup --interval 300

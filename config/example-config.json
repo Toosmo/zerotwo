@@ -1,0 +1,12 @@
+{
+  "BOT": {
+    "OWNER_ID": "owned-id",
+    "TOKEN": "bot-token",
+    "PREFIX": "z."
+  },
+  "LAVALINK": {
+    "HOST": "lavalink-server-ip",
+    "PORT": 2333,
+    "PASSWORD": "password"
+  }
+}
