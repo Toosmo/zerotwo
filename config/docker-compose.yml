@@ -8,7 +8,7 @@ services:
             - lavalink
         volumes:
             - ./config.json:/app/config/config.json
-        entrypoint: /app/wtfc.sh -T 20 nc -z lavalink 2333 && /app/.venv/bin/python zerotwo/bot.py
+        entrypoint: /app/wait-for-it.sh -t 0 lavalink:2333 -- /app/.venv/bin/python zerotwo/bot.py
 
     lavalink:
         image: fredboat/lavalink:master
