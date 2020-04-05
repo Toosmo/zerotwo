@@ -10,7 +10,7 @@ python = "^3.8"
 wavelink = "*"
 jishaku = "*"
 aiodns = "*"
-cchardet = "^*"
+cchardet = "*"
 uvloop = {version = "*", platform = "linux"}
 psutil = "*"
 
