@@ -37,6 +37,18 @@ version = "1.4.3"
 
 [[package]]
 category = "main"
+description = "An AST unparser for Python"
+name = "astunparse"
+optional = false
+python-versions = "*"
+version = "1.6.3"
+
+[package.dependencies]
+six = ">=1.6.1,<2.0"
+wheel = ">=0.23.0,<1.0"
+
+[[package]]
+category = "main"
 description = "Timeout context manager for asyncio programs"
 name = "async-timeout"
 optional = false
@@ -302,7 +314,10 @@ description = "Parses a superset of Python allowing for inline module import exp
 name = "import-expression"
 optional = false
 python-versions = "*"
-version = "1.0.0"
+version = "1.1.1"
+
+[package.dependencies]
+astunparse = ">=1.6.3,<2.0.0"
 
 [package.extras]
 test = ["pytest", "pytest-cov"]
@@ -569,6 +584,17 @@ version = "8.1"
 
 [[package]]
 category = "main"
+description = "A built-package format for Python"
+name = "wheel"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+version = "0.34.2"
+
+[package.extras]
+test = ["pytest (>=3.0.0)", "pytest-cov"]
+
+[[package]]
+category = "main"
 description = "Yet another URL library"
 name = "yarl"
 optional = false
@@ -605,6 +631,10 @@ aiohttp = [
 appdirs = [
     {file = "appdirs-1.4.3-py2.py3-none-any.whl", hash = "sha256:d8b24664561d0d34ddfaec54636d502d7cea6e29c3eaf68f3df6180863e2166e"},
     {file = "appdirs-1.4.3.tar.gz", hash = "sha256:9e5896d1372858f8dd3344faf4e5014d21849c756c8d5701f78f8a103b372d92"},
+]
+astunparse = [
+    {file = "astunparse-1.6.3-py2.py3-none-any.whl", hash = "sha256:c2652417f2c8b5bb325c885ae329bdf3f86424075c4fd1a128674bc6fba4b8e8"},
+    {file = "astunparse-1.6.3.tar.gz", hash = "sha256:5ad93a8456f0d084c3456d059fd9a92cce667963232cbf763eac3bc5b7940872"},
 ]
 async-timeout = [
     {file = "async-timeout-3.0.1.tar.gz", hash = "sha256:0c3c816a028d47f659d6ff5c745cb2acf1f966da1fe5c19c77a70282b25f4c5f"},
@@ -755,8 +785,8 @@ idna = [
     {file = "idna-2.9.tar.gz", hash = "sha256:7588d1c14ae4c77d74036e8c22ff447b26d0fde8f007354fd48a7814db15b7cb"},
 ]
 import-expression = [
-    {file = "import_expression-1.0.0-py3-none-any.whl", hash = "sha256:9bf1e5cd5ef61930b35e6eccabab3d9f4c67f5096c88471f7aca50adc6fa4804"},
-    {file = "import_expression-1.0.0.tar.gz", hash = "sha256:8ad5863222e8aecb8178c456f3a62a553029860ab5dbc50d3f5ccf480eb034da"},
+    {file = "import_expression-1.1.1-py3-none-any.whl", hash = "sha256:f56e63e907ac2e19c1323de4ae793502001797020efaab9454220b3eacda4329"},
+    {file = "import_expression-1.1.1.tar.gz", hash = "sha256:827cb883996db09b08b3988504d2532b831a3b744480b44843af180b59880f17"},
 ]
 jishaku = [
     {file = "jishaku-1.18.2.188-py3-none-any.whl", hash = "sha256:8fd80672eec0d2bc53faadae951152991952f96b82a0ea93108a8d201ac79408"},
@@ -1004,6 +1034,10 @@ websockets = [
     {file = "websockets-8.1-cp38-cp38-win32.whl", hash = "sha256:e898a0863421650f0bebac8ba40840fc02258ef4714cb7e1fd76b6a6354bda36"},
     {file = "websockets-8.1-cp38-cp38-win_amd64.whl", hash = "sha256:f8a7bff6e8664afc4e6c28b983845c5bc14965030e3fb98789734d416af77c4b"},
     {file = "websockets-8.1.tar.gz", hash = "sha256:5c65d2da8c6bce0fca2528f69f44b2f977e06954c8512a952222cea50dad430f"},
+]
+wheel = [
+    {file = "wheel-0.34.2-py2.py3-none-any.whl", hash = "sha256:df277cb51e61359aba502208d680f90c0493adec6f0e848af94948778aed386e"},
+    {file = "wheel-0.34.2.tar.gz", hash = "sha256:8788e9155fe14f54164c1b9eb0a319d98ef02c160725587ad60f14ddc57b6f96"},
 ]
 yarl = [
     {file = "yarl-1.4.2-cp35-cp35m-macosx_10_13_x86_64.whl", hash = "sha256:3ce3d4f7c6b69c4e4f0704b32eca8123b9c58ae91af740481aa57d7857b5e41b"},
