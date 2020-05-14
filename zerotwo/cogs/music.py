@@ -182,6 +182,19 @@ class InteractiveController(menus.Menu):
         self.embed = embed
         self.player = player
 
+    async def update(self, payload):
+        if self._can_remove_reactions:
+            if payload.event_type == "REACTION_ADD":
+                await self.bot.http.remove_reaction(
+                    payload.channel_id,
+                    payload.message_id,
+                    discord.Message._emoji_reaction(payload.emoji),
+                    payload.member.id,
+                )
+            elif payload.event_type == "REACTION_REMOVE":
+                return
+        await super().update(payload)
+
     def update_context(self, payload: discord.RawReactionActionEvent):
         """Update our context with the user who reacted."""
         ctx = copy.copy(self.ctx)
