@@ -558,7 +558,7 @@ description = "A versatile LavaLink wrapper for Discord.py"
 name = "wavelink"
 optional = false
 python-versions = ">=3.7"
-version = "0.7.1"
+version = "0.7.2"
 
 [package.dependencies]
 aiohttp = ">=3.6.0,<3.7.0"
@@ -994,8 +994,8 @@ virtualenv = [
     {file = "virtualenv-20.0.20.tar.gz", hash = "sha256:fd0e54dec8ac96c1c7c87daba85f0a59a7c37fe38748e154306ca21c73244637"},
 ]
 wavelink = [
-    {file = "wavelink-0.7.1-py3-none-any.whl", hash = "sha256:1f2e4734e3867ad3559c802dcf6914c23103fdaba22cce98997cd28eecfb9906"},
-    {file = "wavelink-0.7.1.tar.gz", hash = "sha256:91b1d8004e8e59ade45d024ee7fdc6bb59efb866f49f80431fcb9855ed6397d7"},
+    {file = "wavelink-0.7.2-py3-none-any.whl", hash = "sha256:caa31938ebb56c6db3d4493fcd0e4a17381525f306fb3b4e3787705b3db7b4c0"},
+    {file = "wavelink-0.7.2.tar.gz", hash = "sha256:c1ec7173267f240963d7e0d50f9dbb81085c9d92da66a33bf9f775c6ea052cf3"},
 ]
 websockets = [
     {file = "websockets-8.1-cp36-cp36m-macosx_10_6_intel.whl", hash = "sha256:3762791ab8b38948f0c4d281c8b2ddfa99b7e510e46bd8dfa942a5fff621068c"},
