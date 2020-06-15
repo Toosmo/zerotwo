@@ -305,7 +305,7 @@ description = "Parses a superset of Python allowing for inline module import exp
 name = "import-expression"
 optional = false
 python-versions = "*"
-version = "1.1.3"
+version = "1.1.4"
 
 [package.dependencies]
 astunparse = ">=1.6.3,<2.0.0"
@@ -770,8 +770,8 @@ idna = [
     {file = "idna-2.9.tar.gz", hash = "sha256:7588d1c14ae4c77d74036e8c22ff447b26d0fde8f007354fd48a7814db15b7cb"},
 ]
 import-expression = [
-    {file = "import_expression-1.1.3-py3-none-any.whl", hash = "sha256:abd3a3e83bdf50750ddb1de3184d5601762e4befe7d20b5f0b0e720836f8a1ee"},
-    {file = "import_expression-1.1.3.tar.gz", hash = "sha256:ba67dc0c55d2bbf28598f9e06787f6a4d0bc7f0e3c9562dd0ca9c15c33d16ca1"},
+    {file = "import_expression-1.1.4-py3-none-any.whl", hash = "sha256:292099910a4dcc65ba562377cd2265487ba573dd63d73bdee5deec36ca49555b"},
+    {file = "import_expression-1.1.4.tar.gz", hash = "sha256:06086a6ab3bfa528b1c478e633d6adf2b3a990e31440f6401b0f3ea12b0659a9"},
 ]
 jishaku = [
     {file = "jishaku-1.18.2.188-py3-none-any.whl", hash = "sha256:8fd80672eec0d2bc53faadae951152991952f96b82a0ea93108a8d201ac79408"},
