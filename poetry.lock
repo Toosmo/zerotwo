@@ -503,7 +503,7 @@ description = "Manage dynamic plugins for Python applications"
 name = "stevedore"
 optional = false
 python-versions = ">=3.6"
-version = "2.0.1"
+version = "3.2.0"
 
 [package.dependencies]
 pbr = ">=2.0.0,<2.1.0 || >2.1.0"
@@ -947,8 +947,8 @@ smmap = [
     {file = "smmap-3.0.4.tar.gz", hash = "sha256:9c98bbd1f9786d22f14b3d4126894d56befb835ec90cef151af566c7e19b5d24"},
 ]
 stevedore = [
-    {file = "stevedore-2.0.1-py3-none-any.whl", hash = "sha256:c4724f8d7b8f6be42130663855d01a9c2414d6046055b5a65ab58a0e38637688"},
-    {file = "stevedore-2.0.1.tar.gz", hash = "sha256:609912b87df5ad338ff8e44d13eaad4f4170a65b79ae9cb0aa5632598994a1b7"},
+    {file = "stevedore-3.2.0-py3-none-any.whl", hash = "sha256:c8f4f0ebbc394e52ddf49de8bcc3cf8ad2b4425ebac494106bbc5e3661ac7633"},
+    {file = "stevedore-3.2.0.tar.gz", hash = "sha256:38791aa5bed922b0a844513c5f9ed37774b68edc609e5ab8ab8d8fe0ce4315e5"},
 ]
 toml = [
     {file = "toml-0.10.1-py2.py3-none-any.whl", hash = "sha256:bda89d5935c2eac546d648028b9901107a595863cb36bae0c73ac804a9b4ce88"},
