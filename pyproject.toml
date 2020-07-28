@@ -25,13 +25,14 @@ authors = []
 
 [tool.poetry.dependencies]
 python = "^3.8"
-"discord.py" = {extras = ["voice"], version = "*"}
+"discord.py" = "*"
 wavelink = "*"
 jishaku = "*"
 aiodns = "*"
 cchardet = "*"
 uvloop = {version = "*", platform = "linux"}
 psutil = "*"
+brotli = "*"
 
 [tool.poetry.dev-dependencies]
 flake8 = "*"
