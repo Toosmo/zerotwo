@@ -47,6 +47,12 @@ class Generic(commands.Cog):
                 f"_**{ctx.author.display_name}** slaps {member.mention} around a bit with {random.choice(weapons)}._"  # nosec
             )
 
+    @commands.command()
+    async def ding(self, ctx):
+        await ctx.send(
+            f"{'🌸 ✌ <a:Dingdingdingding:742622269985128471> DING DING ' * 7 }"
+        )
+
 
 def setup(bot):
     bot.add_cog(Generic(bot))
