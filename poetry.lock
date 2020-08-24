@@ -321,7 +321,7 @@ description = "A discord.py extension including useful tools for bot development
 name = "jishaku"
 optional = false
 python-versions = ">=3.6.0"
-version = "1.19.0.194"
+version = "1.19.1.200"
 
 [package.dependencies]
 braceexpand = ">=0.1.5"
@@ -788,11 +788,12 @@ import-expression = [
     {file = "import_expression-1.1.4.tar.gz", hash = "sha256:06086a6ab3bfa528b1c478e633d6adf2b3a990e31440f6401b0f3ea12b0659a9"},
 ]
 jishaku = [
-    {file = "jishaku-1.19.0.194-py3-none-any.whl", hash = "sha256:00819465e88d2613eae7d7d925ea841a232604af5ce6fbb93d671c3432429456"},
-    {file = "jishaku-1.19.0.194-py3.6.egg", hash = "sha256:10d6b2bbbb0f74be4de3811971de59027cd80a0f5a2257e25ead127525d244be"},
-    {file = "jishaku-1.19.0.194-py3.7.egg", hash = "sha256:666958a6e17503f2b3d1be5f1df35b4efd89c12e728fcdbe119309b19b957177"},
-    {file = "jishaku-1.19.0.194-py3.8.egg", hash = "sha256:5e2646d413562bec0ca7b73112220b1156de4910306ac5f76140adb0562bce37"},
-    {file = "jishaku-1.19.0.194.tar.gz", hash = "sha256:871d935a9ff285263120a20c96be31e9ef72c4682d1d8bd8670885d788518bb3"},
+    {file = "jishaku-1.19.1.200-py3-none-any.whl", hash = "sha256:39ddc1dd1239025e4992bc9d81c1c456938800c6e27c04d6e877cac1cf741376"},
+    {file = "jishaku-1.19.1.200-py3.6.egg", hash = "sha256:b7acf0ce5c1042ae2b7dfb6ee5cd0c2d9cbb099af79eb36762e1784c1348a7f7"},
+    {file = "jishaku-1.19.1.200-py3.7.egg", hash = "sha256:3d2e810771a1f5e334ca6ca445bdbcf87d217cced03b02450f7879efb374aee8"},
+    {file = "jishaku-1.19.1.200-py3.8.egg", hash = "sha256:90ee99a42339ac2053f15ca79d91cf29087550b8e3f1bd401a2fda656c99120b"},
+    {file = "jishaku-1.19.1.200-py3.9.egg", hash = "sha256:62f1598bf635ef32f0121b6e72001f0453c8c060d8cfcb8ef89dbc289a992beb"},
+    {file = "jishaku-1.19.1.200.tar.gz", hash = "sha256:f1eb44b51273fdfeb73652cd94812ae2874deb73b1091b3beb81e28e39e37ef1"},
 ]
 mccabe = [
     {file = "mccabe-0.6.1-py2.py3-none-any.whl", hash = "sha256:ab8a6258860da4b6677da4bd2fe5dc2c659cff31b3ee4f7f5d64e79735b80d42"},
