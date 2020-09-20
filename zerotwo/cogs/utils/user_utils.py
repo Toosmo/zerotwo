@@ -17,5 +17,6 @@ async def get_activity(activity):
         discord.ActivityType.streaming: f"Streaming {activity.name}",
         discord.ActivityType.listening: f"Listening to {activity.name}",
         discord.ActivityType.watching: f"Watching {activity.name}",
+        discord.ActivityType.custom: f"{activity.name}",
     }
     return switch.get(activity.type, None)
