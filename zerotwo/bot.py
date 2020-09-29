@@ -30,13 +30,20 @@ handler.setFormatter(
 )
 logger.addHandler(handler)
 
+intents = discord.Intents.default()
+intents.presences = True
+intents.members = True
+intents.typing = False
+
 prefix = config["BOT"]["PREFIX"]
 owner_id = config["BOT"]["OWNER_ID"]
 
 
 class ZeroTwo(commands.Bot):
     def __init__(self):
-        super().__init__(command_prefix=prefix, owner_id=owner_id, dm_help=None)
+        super().__init__(
+            command_prefix=prefix, intents=intents, owner_id=owner_id, dm_help=None
+        )
 
         for extension in extensions.initial_extensions:
             try:
