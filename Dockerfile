@@ -17,7 +17,7 @@ RUN apt-get install -y --no-install-recommends \
     make \
     git \
     python3-dev \
-    && pip install --no-cache-dir poetry==1.0.10 \
+    && pip install --no-cache-dir poetry==1.1.2 \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
