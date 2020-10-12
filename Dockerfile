@@ -24,8 +24,7 @@ WORKDIR /app
 
 COPY poetry.lock poetry.toml pyproject.toml ./
 
-RUN poetry install --no-dev --no-root \
-    && .venv/bin/python -m pip install --no-cache-dir git+https://github.com/Rapptz/discord-ext-menus
+RUN poetry install --no-dev --no-root
 
 FROM base as final
 

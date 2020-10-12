@@ -33,6 +33,7 @@ cchardet = "*"
 uvloop = {version = "*", platform = "linux"}
 psutil = "*"
 brotli = "*"
+discord-ext-menus = {git = "https://github.com/Rapptz/discord-ext-menus.git", develop = true}
 
 [tool.poetry.dev-dependencies]
 flake8 = "*"
