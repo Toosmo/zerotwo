@@ -6,24 +6,26 @@ WORKDIR /app
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     wget \
- && wget https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh \
- && chmod +x wait-for-it.sh
+    && wget https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh \
+    && chmod +x wait-for-it.sh
 
 FROM base as builder
 
 RUN apt-get install -y --no-install-recommends \
     gcc \
+    g++ \
+    make \
     git \
     python3-dev \
- && pip install --no-cache-dir poetry==1.0.10 \
- && rm -rf /var/lib/apt/lists/*
+    && pip install --no-cache-dir poetry==1.0.10 \
+    && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
 
 COPY poetry.lock poetry.toml pyproject.toml ./
 
 RUN poetry install --no-dev --no-root \
- && .venv/bin/python -m pip install --no-cache-dir git+https://github.com/Rapptz/discord-ext-menus
+    && .venv/bin/python -m pip install --no-cache-dir git+https://github.com/Rapptz/discord-ext-menus
 
 FROM base as final
 
