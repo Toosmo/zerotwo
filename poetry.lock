@@ -179,7 +179,7 @@ description = "An extension module to make reaction based menus with discord.py"
 category = "main"
 optional = false
 python-versions = ">=3.5.3"
-develop = true
+develop = false
 
 [package.dependencies]
 "discord.py" = ">=1.2.5"
@@ -598,7 +598,7 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "7a5045f5177a063c990a66743685878d09a8e68cbd5d1e6d024a88d67f77d873"
+content-hash = "3de179eb1246d17ebfdd5147e66029f1a93d1bd922882ad070cb3868075e6243"
 
 [metadata.files]
 aiodns = [
