@@ -566,7 +566,7 @@ python-versions = "*"
 
 [[package]]
 name = "virtualenv"
-version = "20.4.0"
+version = "20.4.1"
 description = "Virtual Python Environment builder"
 category = "dev"
 optional = false
@@ -1093,8 +1093,8 @@ uvloop = [
     {file = "uvloop-0.14.0.tar.gz", hash = "sha256:123ac9c0c7dd71464f58f1b4ee0bbd81285d96cdda8bc3519281b8973e3a461e"},
 ]
 virtualenv = [
-    {file = "virtualenv-20.4.0-py2.py3-none-any.whl", hash = "sha256:227a8fed626f2f20a6cdb0870054989f82dd27b2560a911935ba905a2a5e0034"},
-    {file = "virtualenv-20.4.0.tar.gz", hash = "sha256:219ee956e38b08e32d5639289aaa5bd190cfbe7dafcb8fa65407fca08e808f9c"},
+    {file = "virtualenv-20.4.1-py2.py3-none-any.whl", hash = "sha256:3e445890d7f58a066080885c48144268f85b456b788ad849a60f239eb04932af"},
+    {file = "virtualenv-20.4.1.tar.gz", hash = "sha256:f61234eee61c817a7d33e3a21642bd642f0825d3a56107b2a8deb067b03bf1e6"},
 ]
 wavelink = [
     {file = "wavelink-0.9.6-py3-none-any.whl", hash = "sha256:31e01e5e85683c29b79cf0093fda1bcd31d845077c9db1e05bd657e82af5ced6"},
