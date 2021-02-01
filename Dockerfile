@@ -4,20 +4,22 @@ ENV PYTHONUNBUFFERED=1
 
 WORKDIR /app
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    wget \
-    && wget https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh \
-    && chmod +x wait-for-it.sh
+ADD https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh ./
+RUN chmod +x wait-for-it.sh
+
+RUN useradd -m -r zerotwo && \
+    chown zerotwo /app
 
 FROM base as builder
 
-RUN apt-get install -y --no-install-recommends \
+ARG POETRY_VERSION=1.1.4
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
     gcc \
-    g++ \
     make \
     git \
     python3-dev \
-    && pip install --no-cache-dir poetry==1.1.2 \
+    && pip install --no-cache-dir poetry==$POETRY_VERSION \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
@@ -33,5 +35,7 @@ WORKDIR /app
 COPY --from=builder /app/.venv .venv/
 
 COPY . .
+
+USER zerotwo
 
 CMD [".venv/bin/python", "zerotwo/bot.py"]
