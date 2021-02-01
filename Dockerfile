@@ -8,7 +8,7 @@ RUN useradd -m -r zerotwo && \
     chown zerotwo /app
 
 ADD https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh ./
-RUN chmod +x wait-for-it.sh
+RUN chmod +x wait-for-it.sh && chown zerotwo wait-for-it.sh
 
 FROM base as builder
 
